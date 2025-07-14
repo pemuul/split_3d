@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grid_split"
+version = "0.1.0"
+description = "3D mesh grid slicing tool"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "trimesh",
+    "numpy",
+    "pyglet<2",
+]
+
+[project.scripts]
+grid_split = "grid_split.__main__:main"
